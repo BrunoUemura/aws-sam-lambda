@@ -1,7 +1,7 @@
 "use strict";
 
 const app = require("../../src/index");
-const event = require("../../events/event.json");
+const event = require("../../mocks/events/event.json");
 let context;
 
 describe("Tests index", function () {
