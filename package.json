@@ -10,7 +10,8 @@
     "axios": "^0.21.1"
   },
   "scripts": {
-    "dev": "sam local invoke HelloFunction -e mocks/event/event.json",
+    "dev": "sam local invoke HelloFunction -e mocks/events/event.json",
+    "start": "sam build && sam local invoke HelloFunction -e mocks/events/event.json",
     "test": "jest --detectOpenHandles --forceExit --silent",
     "build": "sam build",
     "deploy": "sam deploy"
